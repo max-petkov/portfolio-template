@@ -1,0 +1,118 @@
+@media (max-width: 768.98px) {
+    .text-mega {
+        font-size: 48px;
+    }
+
+    .text-thirdly {
+        font-size: 20px;
+    }
+
+    .p-7 {
+        padding: 64px 32px;
+    }
+
+    nav {
+        position: absolute;
+        top: 94px;
+        right: 51px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(224, 226, 229, 0.95);
+        text-align: center;
+        z-index: 0;
+        border-radius: 8px;
+    }
+
+
+    nav:before {
+        content: '';
+        position: absolute;
+        top: -16px;
+        right: 35px;
+        border: 8px solid;
+        border-color: transparent rgba(224, 226, 229, 0.95) rgba(224, 226, 229, 0.95) transparent;
+    }
+
+    nav.show-menu {
+        display: flex;
+    }
+
+    .nav-link {
+        color: #000;
+    }
+
+    .border-animation:before {
+        border-bottom-color: #000;
+    }
+
+    .border-animation + .border-animation {
+        margin-left: 0;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 425.98px) {
+    header {
+        padding: 32px;
+    }
+
+    nav {
+        top: 93px;
+        right: 20px;
+    }
+
+    .project-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-button {
+        padding: 16px 26px;
+    }
+
+    .btn + .btn {
+        margin-left: none;
+    }
+
+    hr {
+        width: 300px;
+    }
+}
+
+@media (max-width: 375.98px) {
+    .text-mega {
+        font-size: 40px;
+    }
+
+    .text-thirdly {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .p-7 {
+        padding: 64px 0;
+    }
+
+    .text-secondary {
+        font-size: 24px;
+    }
+
+    .card-wrapper {
+        width: 300px;
+    }
+}

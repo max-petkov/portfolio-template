@@ -1,0 +1,484 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+:root {
+    --primary-bck-color: #22262A;
+    --secondary-bck-color: #E0E2E5;
+    --btn-primary-color: #3D3B8F;
+    --sass-color: #94456C;
+    --sass-background-color: #E9C2D5;
+    --jquery-color: #302E70;
+    --jquery-background-color: #B4D0E4;
+    --bootstrap-color: #5E4484;
+    --bootstrap-background-color: #D2CBDD;
+}
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: var(--secondary-bck-color);
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    padding: 32px 64px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* HELPERS */
+
+
+.primary-bck-color {
+    background-color: var(--primary-bck-color);
+}
+
+.secondary-bck-color {
+    background-color: var(--secondary-bck-color);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-mega {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.text-secondary {
+    font-size: 32px;
+}
+
+.text-thirdly {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.text-small {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text-title {
+    font-size: 20px;
+}
+
+.py-6 {
+    padding: 32px 0;
+}
+
+.p-7 {
+    padding: 64px;
+}
+
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mt-3 {
+    margin-top: 16px;
+}
+
+.m-3 {
+    margin: 16px;
+}
+
+.mt-5 {
+    margin-top: 24px;
+}
+
+.mt-6 {
+    margin-top: 32px;
+}
+
+
+.mt-7 {
+    margin-top: 64px;
+}
+
+.mt-8 {
+    margin-top: 128px;
+}
+
+.my-2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mr-1 {
+    margin-right: 4px;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+.p-line-height {
+    line-height: 150%;
+}
+
+.full-width-height {
+    width: 100%;
+    height: 100vh;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-row-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-row-space-btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font-clear-padding {
+    line-height: 70px;
+    overflow: hidden;
+}
+
+/* Hero Section */
+    
+    .logo {
+        font-family: 'Bungee Shade', cursive;
+        font-size: 56px;
+    }
+
+    .nav-link {
+        position: relative;
+        font-weight: 700;
+        letter-spacing: 2px;
+        z-index: 1;
+    }
+
+    .border-animation {
+        position: relative;
+        padding-bottom: 8px;
+        z-index: 0;
+    }
+
+    .border-animation:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        border-bottom: 2px solid #fff;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    .border-animation:hover:before {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .border-animation + .border-animation {
+        margin-left: 32px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .hero-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        z-index: -1;
+    }
+
+    .hero-button {
+        background-color: var(--btn-primary-color);
+        padding: 16px 32px;
+        border: none;
+        font-weight: bold;
+        border-radius: 8px;
+        margin-top: 32px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        letter-spacing: 2px;
+    }
+
+    .hero-button:active {
+        transform: scale(0.97);
+    }
+
+/* ICONS */
+
+.animation-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    transform: translate(0, 0);
+    transition: 0.2s;
+}
+
+.animation-icon:hover {
+    transform: translate(4px, 2px);
+}
+
+.fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 48px;
+}
+
+[alt='jquery'] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    transform: translate(0, 0);
+    transition: 0.2s;
+}
+
+.front-layer {
+    background-color: #7F8C99;
+}
+
+.middle-layer {
+    background-color: #5D6873;
+}
+
+.animation-icon:hover .middle-layer {
+    transform: translate(6px, 3px);
+}
+
+.back-layer {
+    background-color: #22262A;
+}
+
+.animation-icon:hover .back-layer {
+    transform: translate(12px, 6px);
+}
+
+.border-layer {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: translate(-4px, -4px);
+}
+
+.animation-icon:hover .border-layer {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: translate(15px, 9px);
+    transition: 0.2s;
+    transition-delay: 0.3s;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+/* CARDS */
+
+.card-wrapper {
+    width: 400px;
+    height: 100%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE */
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #22262A;
+}
+
+.fa-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 48px;
+}
+
+
+/* TEXT */
+.project-info {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fff;
+    padding: 32px;
+}
+
+.chip {
+    width: 75px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.chip + .chip {
+    margin-left: 8px;
+}
+
+.sass-bck {
+    background-color: var(--sass-background-color);
+}
+
+.sass-color {
+    color: var(--sass-color);
+}
+
+.jquery-bck {
+    background-color: var(--jquery-background-color);
+}
+
+.jquery-color {
+    color: var(--jquery-color);
+}
+
+.bootstrap-bck {
+    background-color: var(--bootstrap-background-color);
+}
+
+.bootstrap-color {
+    color: var(--bootstrap-color);
+}
+
+.fa-chevron-down {
+    cursor: pointer;
+}
+
+.fa-chevron-down.rotate-icon {
+    transition: 0.2s;
+    transform: rotate(180deg);
+}
+
+.additional-text {
+    border-top: 2px solid #707070;
+    border-bottom: 2px solid #707070;
+    height: 256px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.is-project-open .additional-text{
+    display: block;
+}
+
+.additional-text.show-additional-text {
+    display: block;
+}
+
+.btn {
+    width: 128px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+}
+
+.btn-demo {
+    border: none;
+    background-color: var(--btn-primary-color);
+    color: #fff;
+}
+
+.btn-code {
+    border: 3px solid var(--btn-primary-color);
+    color: var(--btn-primary-color);
+    background-color: #fff;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+.btn + .btn {
+    margin-left: 16px;
+}
+
+/* Footer */
+
+hr {
+    width: 370px
+}
