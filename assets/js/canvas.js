@@ -1,13 +1,10 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
+const color = "#9DAFC2";
+let circle = [];
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
-
-let circle = [];
-let square = [];
-
-let color = "#9DAFC2";
 
 // CIRCLE SHAPE
 class Circle {
@@ -31,7 +28,7 @@ class Circle {
 
   update() {
     this.draw();
-    // It will contact with the edge of the ball not with the center...
+    // It will contact with the edge of the ball not with it center...
     if (
       this.x + this.maxRadius + 14 > canvas.width ||
       this.x - this.maxRadius < 0

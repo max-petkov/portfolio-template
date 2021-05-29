@@ -62,6 +62,10 @@ canvas {
   background-color: var(--secondary-bck-color);
 }
 
+.text-semi-bold {
+  font-weight: 500;
+}
+
 .text-white {
   color: #fff;
 }
@@ -158,6 +162,10 @@ canvas {
   margin-right: 8px;
 }
 
+.mr-3 {
+  margin-right: 16px;
+}
+
 .p-line-height {
   line-height: 150%;
 }
@@ -171,10 +179,20 @@ canvas {
   width: 100%;
 }
 
+/* Borders */
+.border-radius-top-8 {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
 /* Display */
 
 .d-block {
   display: block;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .flex-col {
@@ -434,11 +452,12 @@ canvas {
   color: var(--bootstrap-color);
 }
 
-.fa-chevron-down {
+.bi-chevron-down,
+.bi-github {
   cursor: pointer;
 }
 
-.fa-chevron-down.rotate-icon {
+.rotate-icon {
   transition: 0.2s;
   transform: rotate(180deg);
 }
@@ -446,8 +465,7 @@ canvas {
 .additional-text {
   border-top: 2px solid #707070;
   border-bottom: 2px solid #707070;
-  height: 256px;
-  overflow-y: scroll;
+  height: auto;
   display: none;
 }
 
@@ -460,8 +478,7 @@ canvas {
 }
 
 .btn {
-  width: 128px;
-  height: 45px;
+  padding: 0.7rem 2rem;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
@@ -470,13 +487,13 @@ canvas {
 }
 
 .btn-demo {
-  border: none;
+  border: 2px solid var(--btn-primary-color);
   background-color: var(--btn-primary-color);
   color: #fff;
 }
 
 .btn-code {
-  border: 3px solid var(--btn-primary-color);
+  border: 2px solid var(--btn-primary-color);
   color: var(--btn-primary-color);
   background-color: #fff;
 }
