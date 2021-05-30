@@ -26,7 +26,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   overflow-x: hidden;
   background-color: var(--secondary-bck-color);
   height: 100%;
@@ -90,8 +90,12 @@ canvas {
   letter-spacing: 4px;
 }
 
-.text-small {
+.text-sm {
   font-size: 12px;
+  font-weight: 500;
+}
+.text-xsm {
+  font-size: 10px;
   font-weight: 500;
 }
 
@@ -418,14 +422,10 @@ canvas {
   padding: 32px;
 }
 
-.chip {
-  width: 75px;
-  height: 25px;
+.tag {
+  margin: 0.2rem;
+  padding: 0.2rem 0.3rem;
   border-radius: 4px;
-}
-
-.chip + .chip {
-  margin-left: 8px;
 }
 
 .sass-bck {
@@ -446,6 +446,35 @@ canvas {
 
 .bootstrap-bck {
   background-color: var(--bootstrap-background-color);
+}
+
+.javascript-color {
+  color: var(--primary-bck-color);
+}
+
+.javascript-bck {
+  background-color: #efd81d;
+}
+.css-color {
+  color: var(--primary-bck-color);
+}
+
+.css-bck {
+  background-color: #2ea4d796;
+}
+.php-color {
+  color: var(--primary-bck-color);
+}
+
+.php-bck {
+  background-color: #858eb8;
+}
+.mysql-color {
+  color: #005e86;
+}
+
+.mysql-bck {
+  background-color: #dd8800a8;
 }
 
 .bootstrap-color {
@@ -478,7 +507,7 @@ canvas {
 }
 
 .btn {
-  padding: 0.7rem 2rem;
+  padding: 0.3rem 1rem;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
