@@ -56,7 +56,7 @@ projectsContainer.addEventListener("click", function (e) {
 const repository = [
   {
     repoName: "Monster HR",
-    about: "Platform for publishing, searching and appling jobs",
+    about: "Platform for publishing, searching and applying jobs",
     readMore:
       "<b>Depends on user needs:</b> <br>- Companies have dashboard where can publish jobs, remove jobs, create HR account, selecting candidates, messaging... <br>- Candidates can search, apply for jobs, sending motivational speech, message HR...",
     repoImg:
@@ -66,7 +66,7 @@ const repository = [
     languages: "css, bootstrap, sass, jquery, php, mysql",
   },
   {
-    repoName: "Pig game",
+    repoName: "Pig game (Dice game)",
     about: "2P game where you need to reach a 100 score",
     readMore:
       '<b>Game rules can be checked here:</b> <a href="https://github.com/max-petkov/Pig-Game#readme" target="_blank">https://github.com/max-petkov/Pig-Game#readme</a><span class="d-block mt-1">Design is inspired by JS Full Course - Jonas Schmedtmann</span>',
@@ -74,6 +74,17 @@ const repository = [
       "https://repository-images.githubusercontent.com/364683102/3a677c80-c0e0-11eb-84df-fc3a2c37451b",
     code: "https://github.com/max-petkov/Pig-Game",
     view: "https://max-petkov.github.io/Pig-Game/",
+    languages: "javascript, css",
+  },
+  {
+    repoName: "Guess the number",
+    about: "Guess the number between 1 and 20 before your 20 tries runs out",
+    readMore:
+      '<span class="d-block mt-1 mb-2">Design is inspired by JS Full Course - Jonas Schmedtmann</span>',
+    repoImg:
+      "https://repository-images.githubusercontent.com/364330949/b5797300-c172-11eb-8cc0-1b9c9654d2f7",
+    code: "https://github.com/max-petkov/GAME-Guess-The-Number",
+    view: "https://max-petkov.github.io/GAME-Guess-The-Number/",
     languages: "javascript, css",
   },
 ];
