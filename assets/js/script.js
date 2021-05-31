@@ -19,6 +19,11 @@ const smoothScroll = function (el) {
   });
 };
 
+const renderTag = function (tag) {
+  const lowerCaseTag = tag.toLowerCase();
+  return `<div class="tag ${lowerCaseTag}-bck flex-center"><p class="text-xsm ${lowerCaseTag}-color">${lowerCaseTag}</p></div>`;
+};
+
 // Events
 burgerMenu.addEventListener("click", function () {
   navMenu.classList.toggle("show-menu");
@@ -69,7 +74,7 @@ const repository = [
     repoName: "Pig game (Dice game)",
     about: "2P game where you need to reach a 100 score",
     readMore:
-      '<b>Game rules can be checked here:</b> <a href="https://github.com/max-petkov/Pig-Game#readme" target="_blank">https://github.com/max-petkov/Pig-Game#readme</a><span class="d-block mt-1">Design is inspired by JS Full Course - Jonas Schmedtmann</span>',
+      '<span>Game rules can be checked here:</span> <a href="https://github.com/max-petkov/Pig-Game#readme" target="_blank"><b>https://github.com/max-petkov/Pig-Game#readme</b></a><span class="d-block mt-1">Design is inspired by JS Full Course - Jonas Schmedtmann</span>',
     repoImg:
       "https://repository-images.githubusercontent.com/364683102/3a677c80-c0e0-11eb-84df-fc3a2c37451b",
     code: "https://github.com/max-petkov/Pig-Game",
@@ -89,14 +94,8 @@ const repository = [
   },
 ];
 
-const renderTag = function (tag) {
-  const lowerCaseTag = tag.toLowerCase();
-  return `<div class="tag ${lowerCaseTag}-bck flex-center"><p class="text-xsm ${lowerCaseTag}-color">${lowerCaseTag}</p></div>`;
-};
-
 // Render projects
 repository.forEach(function (obj) {
-  const projectContainer = document.querySelector(".project-cards");
   const html = `
   <div class="card-wrapper mt-6">
     <div class="primary-bck-color border-radius-top-8">
@@ -154,5 +153,5 @@ repository.forEach(function (obj) {
   </div>
 </div>`;
 
-  projectContainer.insertAdjacentHTML("beforeend", html);
+  projectsContainer.insertAdjacentHTML("beforeend", html);
 });
