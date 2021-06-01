@@ -60,6 +60,18 @@ projectsContainer.addEventListener("click", function (e) {
 // Projects
 const repository = [
   {
+    repoName: "Workout & Health care",
+    about:
+      "Application for searching food nutritional composition, calculating BMI, BMR, 1RM...",
+    readMore:
+      'Users can choose between login as Guest or creating an account which will be stored into the browser\'s localstorage(saved data <b>CAN</b> be removed).<br>Users can search for foods(data comes from <a href="https://calorieninjas.com/" target="_blank"><b>calorieninjas.com</b></a>); when creating an account user\'s BMI, BMR, calories needs based on workout routine will be calculated automatically.<br> 1RM calculator will display 100% to 50% weight based on result',
+    repoImg:
+      "https://repository-images.githubusercontent.com/370350443/ce059c80-c2dc-11eb-8ca9-a7a6c6dc9ac8",
+    code: "https://github.com/max-petkov/workout-healthcare",
+    view: "https://max-petkov.github.io/workout-healthcare/",
+    languages: "javascript, css",
+  },
+  {
     repoName: "Monster HR",
     about: "Platform for publishing, searching and applying jobs",
     readMore:
